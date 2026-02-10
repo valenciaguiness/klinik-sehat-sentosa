@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Klinik Sehat Sentosa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>🏥 Klinik Sehat Sentosa</h1>
+    <p>Sistem Pencatatan Kunjungan Pasien</p>
+    <span id="status" class="badge"></span>
+  </header>
+
+  <section class="form-card">
+    <h3>Form Kunjungan Pasien</h3>
+
+    <label>Nama Pasien</label>
+    <input id="nama" type="text" placeholder="Masukkan nama pasien">
+
+    <label>Keluhan</label>
+    <textarea id="keluhan" placeholder="Masukkan keluhan"></textarea>
+
+    <label>Tanggal Kunjungan</label>
+    <input id="tanggal" type="date">
+
+    <button onclick="simpan()">Simpan Data Pasien</button>
+
+    <p id="info" class="info"></p>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="data-card">
+    <h3>📋 Riwayat Kunjungan</h3>
+    <div id="dataList" class="data-list"></div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
